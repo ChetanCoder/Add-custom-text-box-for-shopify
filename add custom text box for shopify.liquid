@@ -1,21 +1,8 @@
-{% if product.template_suffix == 'custom' %}
+{% if product.template_suffix == ' ' %}
 <div class="line-item-property__field ">
   <label class="form__label" for="enter-your-vehicle-number">Enter Your Vehicle Number</label>
   <input class="select__select required" style="width: 100%;" id="enter-your-vehicle-number" type="text"
     placeholder="Enter Your Vehicle Number" name="properties[ Enter Your Vehicle Number]" minlength="0" maxlength="15"
     required>
 </div>
-<div class="line-item-property__field">
-  <label class="form__label" for="front-message">Front Message</label>
-  <input class="select__select" style="width: 100%;" id="front-message" type="text"
-    placeholder="Your Personalized Message (Max 25 characters)" name="properties[Front Message]" minlength="0"
-    maxlength="25">
-</div>
-<div class="line-item-property__field">
-  <label class="form__label" for="back-message">Back Message</label>
-  <input class="select__select" style="width: 100%;" id="back-message" type="text"
-    placeholder="Your Personalized Message (Max 25 characters)" name="properties[Back Message]" minlength="0"
-    maxlength="25">
-</div>
-<br>
 {% endif %}
